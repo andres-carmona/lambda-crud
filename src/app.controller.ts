@@ -1,4 +1,4 @@
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 import { ResponseDTO } from './dto/response.dto';
 
@@ -6,7 +6,7 @@ import { ResponseDTO } from './dto/response.dto';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Post("/get-url")
+  @Get('/get-url')
   async retrieveUrl(): Promise<ResponseDTO> {
     const url = await this.appService.getAuthenticatedUrl('');
 

@@ -11,14 +11,14 @@ import { AppService } from './app.service';
     ConfigModule.forRoot(),
     AwsSdkModule.forRoot({
       defaultServiceOptions: {
-        region: process.env.region,
+        region: 'us-east-1',
         credentials: {
-          accessKeyId: process.env.accessKeyId,
-          secretAccessKey: process.env.secretAccessKey,
-        }
+          accessKeyId: 'AKIATN4UTM6HOHAHUXWL',
+          secretAccessKey: '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',
+        },
       },
-      services: [QuickSight]
-    })
+      services: [QuickSight],
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
