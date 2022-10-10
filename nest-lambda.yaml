@@ -6,9 +6,9 @@ Resources:
   GlobalDashboardUrlGenerator:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: dashboard-url-generator
+      FunctionName: crud-clients-lambda
       Handler: dist/lambda-entry-point.handler
-      Runtime: nodejs14.x
+      Runtime: nodejs16.x
       CodeUri: deploy/nest-lambda.zip
       MemorySize: 1512
       Policies: AWSLambdaBasicExecutionRole
