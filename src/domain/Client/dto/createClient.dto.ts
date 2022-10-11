@@ -1,6 +1,8 @@
-import { IsString, IsDate, Length } from 'class-validator';
+import { IsString, Length } from 'class-validator';
+import { ApiProperty } from "@nestjs/swagger";
 
 export class CreateClientDTO {
+
   @IsString()
   name: string;
 

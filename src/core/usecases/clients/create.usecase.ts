@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { ClientService } from "src/domain/Client/client.service";
 import { CreateClientDTO } from "src/domain/Client/dto/createClient.dto";
-import { IClient } from "src/domain/Client/IClient.dto";
+import { IClient } from "src/domain/Client/IClient.interface";
 import { IUsecaseBase } from "src/infrastructure/interfaces/IUsecaseBase.interface";
 
 @Injectable()

@@ -1,6 +1,7 @@
 import { IsString, IsDate, Length, IsNumber } from 'class-validator';
 
 export class UpdateClientDTO {
+  
   @IsNumber({ allowNaN: false })
   id: number;
 

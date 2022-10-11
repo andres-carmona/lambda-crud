@@ -4,7 +4,7 @@ import { Repository, DeleteResult } from 'typeorm';
 import { ClientEntity } from './client.entity';
 import { CreateClientDTO } from './dto/createClient.dto';
 import { UpdateClientDTO } from './dto/updateClient.dto';
-import { IClient } from './IClient.dto';
+import { IClient } from './IClient.interface';
 
 @Injectable()
 export class ClientService {

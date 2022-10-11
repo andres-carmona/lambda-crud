@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { CreateClientDTO } from 'src/domain/Client/dto/createClient.dto';
 import { UpdateClientDTO } from 'src/domain/Client/dto/updateClient.dto';
-import { IClient } from 'src/domain/Client/IClient.dto';
+import { IClient } from 'src/domain/Client/IClient.interface';
 import { ResponseBodyDTO } from 'src/infrastructure/http/dto/responseBody.dto';
 import { CreateUsecase } from '../usecases/clients/create.usecase';
 import { DeleteUsecase } from '../usecases/clients/delete.usecase';

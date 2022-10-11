@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
-import { IClient } from './IClient.dto';
+import { IClient } from './IClient.interface';
 
 @Entity({name: "clients"})
 export class ClientEntity implements IClient {
